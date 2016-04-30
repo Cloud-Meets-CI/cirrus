@@ -19,10 +19,10 @@ public class RunAlbumSteps {
 	Album album;
 
 	// "title" "artist" "releaseYear" "genre"
-	@Given("^New Album \"(.*?)\" \"(.*?)\" \"(.*?)\" \"(.*?)\"$")
-	public void newAlbum(String title, String artist, String releaseYear, String genre) throws Throwable {
+	@Given("^New Album \"(.*?)\" \"(.*?)\" \"(.*?)\" \"(.*?)\" \"(.*?)\"$")
+	public void newAlbum(String title, String artist, String releaseYear, String genre, String description) throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
-		album = new Album(title, artist, releaseYear, genre);;
+		album = new Album(title, artist, releaseYear, genre, description);;
 	}
 
 	@When("^Add Album$")

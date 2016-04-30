@@ -24,7 +24,7 @@ public class AlbumTest {
 
 	@Before
 	public void setUp() throws Exception {
-		album = new Album("title", "artist", "releaseYear", "genre");;
+		album = new Album("title", "artist", "releaseYear", "genre", "description");;
 	}
 
 	@After
