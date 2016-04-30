@@ -30,6 +30,7 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-actuator")
     // end::actuator[]
     // tag::tests[]
+    compile group: 'com.stormpath.spring', name: 'stormpath-default-spring-boot-starter', version:'1.0.RC6'
     testCompile("org.springframework.boot:spring-boot-starter-test")
     // end::tests[]
 }

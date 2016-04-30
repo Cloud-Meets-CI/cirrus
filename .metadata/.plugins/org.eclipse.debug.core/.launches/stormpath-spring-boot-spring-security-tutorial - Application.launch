@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.springframework.ide.eclipse.boot.launch">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/stormpath-spring-boot-spring-security-tutorial/src/main/java/com/stormpath/tutorial/Application.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<mapAttribute key="org.eclipse.debug.core.environmentVariables">
+<mapEntry key="STORMPATH_API_KEY_FILE" value="C:\Users\dfinc_000\Documents\GitHub\cirrus\apiKey.properties"/>
+<mapEntry key="STORMPATH_APPLICATION_HREF" value="https://api.stormpath.com/v1/applications/10ZS6NVzapvqNa8OhN7tRI"/>
+<mapEntry key="STORMPATH_CLIENT_APIKEY_ID" value="2BTXNDVOBKM581LJYZW26MZPQ"/>
+<mapEntry key="STORMPATH_CLIENT_APIKEY_SECRET" value="Y1gXkOKjbRHnx1/Ht9PxO1+cYNbyu/Spr+bnHpTLTUM"/>
+</mapAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.stormpath.tutorial.Application"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="stormpath-spring-boot-spring-security-tutorial"/>
+<stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.springframework.ide.eclipse.boot.launch.BootMavenSourcePathProvider"/>
+<stringAttribute key="process_factory_id" value="org.springframework.ide.eclipse.boot.launch.process.BootProcessFactory"/>
+<booleanAttribute key="spring.boot.dash.hidden" value="false"/>
+<booleanAttribute key="spring.boot.debug.enable" value="false"/>
+<booleanAttribute key="spring.boot.lifecycle.enable" value="true"/>
+<stringAttribute key="spring.boot.lifecycle.termination.timeout" value="15000"/>
+<booleanAttribute key="spring.boot.livebean.enable" value="true"/>
+<stringAttribute key="spring.boot.livebean.port" value="0"/>
+<stringAttribute key="spring.boot.profile" value=""/>
+</launchConfiguration>
