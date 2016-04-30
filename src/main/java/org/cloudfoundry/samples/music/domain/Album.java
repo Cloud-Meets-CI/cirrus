@@ -17,6 +17,7 @@ public class Album {
 
     private String title;
     private String artist;
+    private String description;
     private String releaseYear;
     private String genre;
     private int trackCount;
@@ -25,14 +26,23 @@ public class Album {
     public Album() {
     }
 
-    public Album(String title, String artist, String releaseYear, String genre) {
+    public Album(String title, String artist, String releaseYear, String genre, String description) {
         this.title = title;
         this.artist = artist;
         this.releaseYear = releaseYear;
         this.genre = genre;
+        this.description = description;
     }
 
-    public String getId() {
+    public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public String getId() {
         return id;
     }
 

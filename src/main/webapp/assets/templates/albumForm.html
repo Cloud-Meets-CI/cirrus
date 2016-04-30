@@ -1,26 +1,31 @@
 <div class="modal-header">
-    <h3 ng-show="albumAction === 'add'">Add an album</h3>
-    <h3 ng-show="albumAction === 'update'">Edit an album</h3>
+    <h3 ng-show="albumAction === 'add'">Add an idea</h3>
+    <h3 ng-show="albumAction === 'update'">Edit an idea</h3>
 </div>
 <div class="modal-body">
     <form name="albumForm" role="form">
         <div class="form-group has-feedback" ng-class="{'has-warning': albumForm.title.$invalid, 'has-success': albumForm.title.$valid}">
-            <label for="title">Album Title</label>
+            <label for="title">Innovation Item</label>
             <input type="text" class="form-control input-large" id="title" name="title" required ng-model="album.title">
             <span class="glyphicon form-control-feedback" ng-class="{'glyphicon-warning-sign': albumForm.title.$invalid, 'glyphicon-ok': albumForm.title.$valid}"></span>
         </div>
         <div class="form-group has-feedback" ng-class="{'has-warning': albumForm.artist.$invalid, 'has-success': albumForm.artist.$valid}">
-            <label for="artist">Artist</label>
+            <label for="artist">Owner</label>
             <input type="text" class="form-control input-large" id="artist" name="artist" required ng-model="album.artist">
             <span class="glyphicon form-control-feedback" ng-class="{'glyphicon-warning-sign': albumForm.artist.$invalid, 'glyphicon-ok': albumForm.artist.$valid}"></span>
         </div>
+        <div class="form-group has-feedback" ng-class="{'has-warning': albumForm.description.$invalid, 'has-success': albumForm.description.$valid}">
+            <label for="artist">Description</label>
+            <input type="text" class="form-control input-large" id="description" name="description" required ng-model="album.description">
+            <span class="glyphicon form-control-feedback" ng-class="{'glyphicon-warning-sign': albumForm.description.$invalid, 'glyphicon-ok': albumForm.description.$valid}"></span>
+        </div>
         <div class="form-group has-feedback" ng-class="{'has-warning': albumForm.releaseYear.$invalid, 'has-success': albumForm.releaseYear.$valid}">
-            <label for="releaseYear">Release Year</label>
+            <label for="releaseYear">Submission Date</label>
             <input type="text" class="form-control input-small" id="releaseYear" name="releaseYear" required ng-model="album.releaseYear" ng-pattern=yearPattern>
             <span class="glyphicon form-control-feedback" ng-class="{'glyphicon-warning-sign': albumForm.releaseYear.$invalid, 'glyphicon-ok': albumForm.releaseYear.$valid}"></span>
         </div>
         <div class="form-group has-feedback" ng-class="{'has-warning': albumForm.genre.$invalid, 'has-success': albumForm.genre.$valid}">
-            <label for="genre">Genre</label>
+            <label for="genre">Theme</label>
             <input type="text" class="form-control input-medium" id=genre name="genre" required ng-model="album.genre">
             <span class="glyphicon form-control-feedback" ng-class="{'glyphicon-warning-sign': albumForm.genre.$invalid, 'glyphicon-ok': albumForm.genre.$valid}"></span>
         </div>

@@ -39,11 +39,11 @@ function AlbumsController($scope, $modal, Albums, Album, Status) {
     function saveAlbum(album) {
         Albums.save(album,
             function () {
-                Status.success("Album saved");
+                Status.success("Idea saved");
                 list();
             },
             function (result) {
-                Status.error("Error saving album: " + result.status);
+                Status.error("Error saving idea: " + result.status);
             }
         );
     }
@@ -89,11 +89,11 @@ function AlbumsController($scope, $modal, Albums, Album, Status) {
     $scope.deleteAlbum = function (album) {
         Album.delete({id: album.id},
             function () {
-                Status.success("Album deleted");
+                Status.success("Idea deleted");
                 list();
             },
             function (result) {
-                Status.error("Error deleting album: " + result.status);
+                Status.error("Error deleting idea: " + result.status);
             }
         );
     };
@@ -112,7 +112,7 @@ function AlbumsController($scope, $modal, Albums, Album, Status) {
 
 function AlbumModalController($scope, $modalInstance, album, action) {
     $scope.albumAction = action;
-    $scope.yearPattern = /^[1-2]\d{3}$/;
+    $scope.yearPattern = /^(((((((0?[13578])|(1[02]))[\.\-/]?((0?[1-9])|([12]\d)|(3[01])))|(((0?[469])|(11))[\.\-/]?((0?[1-9])|([12]\d)|(30)))|((0?2)[\.\-/]?((0?[1-9])|(1\d)|(2[0-8]))))[\.\-/]?(((19)|(20))?([\d][\d]))))|((0?2)[\.\-/]?(29)[\.\-/]?(((19)|(20))?(([02468][048])|([13579][26])))))$/;
     $scope.album = album;
 
     $scope.ok = function () {
@@ -147,11 +147,11 @@ function AlbumEditorController($scope, Albums, Status, EditorStatus) {
 
         Albums.save({}, album,
             function () {
-                Status.success("Album saved");
+                Status.success("Idea saved");
                 list();
             },
             function (result) {
-                Status.error("Error saving album: " + result.status);
+                Status.error("Error saving idea: " + result.status);
             }
         );
 
