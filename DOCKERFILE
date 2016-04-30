@@ -1,9 +1,0 @@
-FROM tomcat:latest
-
-COPY cirrus.jar /usr/local/tomcat/webapps
-Copy apikey apiKey.properties /usr/local/tomcat
-
-ENV STORMPATH_CLIENT_APIKEY_ID 2BTXNDVOBKM581LJYZW26MZPQ
-ENV STORMPATH_CLIENT_APIKEY_SECRET Y1gXkOKjbRHnx1/Ht9PxO1+cYNbyu/Spr+bnHpTLTUM
-ENV STORMPATH_APPLICATION_HREF https://api.stormpath.com/v1/applications/10ZS6NVzapvqNa8OhN7tRI
-ENV STORMPATH_API_KEY_FILE /usr/local/tomcat/apiKey.properties
