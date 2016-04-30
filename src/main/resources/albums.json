@@ -6,5 +6,29 @@
 		"description": "A babbling water fountain of luke warm coffee on every floor",
         "releaseYear": "4/30/2016",
         "genre": "Right Speed IT"
+    },
+    {
+        "_class": "org.cloudfoundry.samples.music.domain.Album",
+        "artist": "Patrick Graziosi",
+        "title": "Spotify Subscription Discounts",
+		"description": "Everybody knows music increases productivity. We should get discounted spotify and google play music rates so I can listen to the new drake album",
+        "releaseYear": "3/11/2016",
+        "genre": "Connected Workforce"
+    },
+    {
+        "_class": "org.cloudfoundry.samples.music.domain.Album",
+        "artist": "Nehal Gandhi",
+        "title": "2x Overtime Pay for Jury Duty Service",
+		"description": "Employees should be compensated extra for jury duty service especially in cases involving hoverboards",
+        "releaseYear": "3/28/2016",
+        "genre": "Digital Insurer"
+    },
+    {
+        "_class": "org.cloudfoundry.samples.music.domain.Album",
+        "artist": "Tyler Singkofer",
+        "title": "Weather Manipulation",
+		"description": "We should check if China's weather manipulation techniques will impact the Travelers internal cloud",
+        "releaseYear": "11/3/2015",
+        "genre": "Cloud Ready"
     }
 ]
