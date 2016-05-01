@@ -270,10 +270,35 @@
 					<xmlOutput>true</xmlOutput>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>cobertura-maven-plugin</artifactId>
+				<version>2.6</version>
+				<configuration>
+					<formats>
+						<format>xml</format>
+					</formats>
+					<instrumentation>
+						<ignores>
+							<ignore>com.*</ignore>
+						</ignores>
+						<excludes>
+							<exclude>com/**/*.class</exclude>
+							<exclude>com/*Test.class</exclude>
+						</excludes>
+					</instrumentation>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jxr-plugin</artifactId>
+				<version>2.1</version>
+			</plugin>
+			
 		</plugins>
 	</build>
 
-	<reporting>
+<!-- 	<reporting>
 		<plugins>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
@@ -281,9 +306,17 @@
 				<version>2.6</version>
 				<configuration>
 					<formats>
-						<format>html</format>
 						<format>xml</format>
 					</formats>
+					<instrumentation>
+						<ignores>
+							<ignore>com.*</ignore>
+						</ignores>
+						<excludes>
+							<exclude>com/**/*.class</exclude>
+							<exclude>com/*Test.class</exclude>
+						</excludes>
+					</instrumentation>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -292,6 +325,6 @@
 				<version>2.1</version>
 			</plugin>
 		</plugins>
-	</reporting>
+	</reporting> -->
 
 </project>
