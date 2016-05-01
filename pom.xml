@@ -6,11 +6,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>io.pivotal.cf</groupId>
-	<artifactId>spring-music</artifactId>
+	<artifactId>cirrus</artifactId>
 	<version>1.0.0</version>
 
-	<name>spring-music</name>
-	<description>Spring Sample Application </description>
+	<name>cirrus</name>
+	<description>Travelers Innovation Tracker</description>
 	<packaging>war</packaging>
 
 	<dependencies>
