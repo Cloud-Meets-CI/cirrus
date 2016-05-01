@@ -19,7 +19,7 @@
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
-            <test name="src.test.java.UITestBase" todir="${junit.output.dir}"/>
+            <test name="target.test-classes.UITestBase" todir="${junit.output.dir}"/>
             <classpath refid="run.selenium.classpath"/>
         </junit>
     </target>
