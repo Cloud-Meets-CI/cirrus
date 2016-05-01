@@ -4,7 +4,7 @@
               To include a user specific buildfile here, simply create one in the same
               directory with the processing instruction <?eclipse.ant.import?>
               as the first entry and export the buildfile again. -->
-<project basedir="." default="selenium" name="spring-music">
+<project basedir="." default="selenium" name="cirrus">
     <property environment="env"/>
     <!--<property name="ECLIPSE_HOME" value="../../../../../eclipse/"/>-->
     <property name="junit.output.dir" value="junit"/>
@@ -19,7 +19,7 @@
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
-            <test name="selenium.UITestBase" todir="${junit.output.dir}"/>
+            <test name="src.test.java.UITestBase" todir="${junit.output.dir}"/>
             <classpath refid="run.selenium.classpath"/>
         </junit>
     </target>

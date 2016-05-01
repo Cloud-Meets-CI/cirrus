@@ -16,7 +16,7 @@ public class UITestBase {
 	@Before
 	public void setUp() throws Exception {
 		driver = new FirefoxDriver();
-		baseUrl = "http://innovation-idea-graz.cfapps.io/";
+		baseUrl = "http://107.170.49.86/8888/cirrus-1.0.0";
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 
