@@ -51,6 +51,10 @@ public class AlbumRepositoryPopulator implements ApplicationListener<ContextRefr
     @SuppressWarnings("unchecked")
     public void populate(AlbumRepository repository) {
         Object entity = getEntityFromResource(sourceData);
+        
+        if(null==null){
+        	
+        }
 
         if (entity instanceof Collection) {
             for (Album album : (Collection<Album>) entity) {
@@ -65,7 +69,7 @@ public class AlbumRepositoryPopulator implements ApplicationListener<ContextRefr
 
     private Object getEntityFromResource(Resource resource) {
         try {
-            return resourceReader.readFrom(resource, this.getClass().getClassLoader())
+            return resourceReader.readFrom(resource, this.getClass().getClassLoader());
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
