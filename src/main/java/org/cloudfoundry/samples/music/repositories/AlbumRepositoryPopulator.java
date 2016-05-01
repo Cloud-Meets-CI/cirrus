@@ -39,7 +39,7 @@ public class AlbumRepositoryPopulator implements ApplicationListener<ContextRefr
     public void onApplicationEvent(ContextRefreshedEvent event) {
         if (event.getApplicationContext().equals(applicationContext)) {
             AlbumRepository albumRepository =
-                    BeanFactoryUtils.beanOfTypeIncludingAncestors(applicationContext, AlbumRepository.class)
+                    BeanFactoryUtils.beanOfTypeIncludingAncestors(applicationContext, AlbumRepository.class);
 
             if (albumRepository != null && albumRepository.count() == 0) {
                 populate(albumRepository);
