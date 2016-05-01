@@ -16,7 +16,9 @@
         <pathelement location="../../../.m2/repository/org/seleniumhq/selenium/selenium-server/2.53.0/selenium-server-2.53.0.jar"/>-->
     	<pathelement location="/usr/bin/junit-4.12.jar" />
     	<pathelement location="/usr/bin/selenium-server-standalone-2.53.0.jar" />
-    	<pathelement location="target/test-classes/UITestBase.class" />
+    	<dirset dir="target/test-classes">
+    		<include name="*.class"/>
+    	</dirset>
     </path>
     <target name="selenium">
         <mkdir dir="${junit.output.dir}"/>
