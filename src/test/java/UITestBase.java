@@ -25,9 +25,9 @@ public class UITestBase {
 	public void testSortItem() throws Exception {
 		driver.get(baseUrl + "/");
 		driver.findElement(By.linkText("Innovation Item")).click();
-		Thread.sleep(2500);
+		//Thread.sleep(2500);
 		driver.findElement(By.linkText("Owner")).click();
-		Thread.sleep(2500);
+		//Thread.sleep(2500);
 		driver.findElement(By.linkText("Submission Date")).click();
 		driver.findElement(By.linkText("Theme")).click();
 		driver.findElement(By.cssSelector("span.glyphicon.glyphicon-chevron-up")).click();
@@ -54,7 +54,7 @@ public class UITestBase {
 		driver.findElement(By.id("genre")).clear();
 		driver.findElement(By.id("genre")).sendKeys("Right Speed IT");
 		driver.findElement(By.xpath("//div[3]/button")).click();
-		Thread.sleep(1000);
+		//Thread.sleep(1000);
 	}
 	
 	@Test
@@ -74,7 +74,7 @@ public class UITestBase {
 		driver.findElement(By.id("genre")).sendKeys("Cloud Ready");
 		driver.findElement(By.xpath("//div[3]/button")).click();
 		// Idea 3
-		Thread.sleep(1000);
+		//Thread.sleep(1000);
 		driver.findElement(By.linkText("add an idea")).click();
 		driver.findElement(By.id("title")).clear();
 		driver.findElement(By.id("title")).sendKeys("Test Idea 3");
@@ -87,10 +87,10 @@ public class UITestBase {
 		driver.findElement(By.id("genre")).clear();
 		driver.findElement(By.id("genre")).sendKeys("Connected Workforce");
 		driver.findElement(By.xpath("//div[3]/button")).click();
-		Thread.sleep(2500);
+		//Thread.sleep(2500);
 	    driver.findElement(By.xpath("//div[@id='albums']/div[3]/div/div[5]/div/div/div/a/span")).click();
 	    driver.findElement(By.xpath("(//a[contains(text(),'delete')])[5]")).click();
-	    Thread.sleep(2500);
+	    //Thread.sleep(2500);
 	    driver.findElement(By.xpath("//div[@id='albums']/div[3]/div/div[5]/div/div/div/a/span")).click();
 	    driver.findElement(By.xpath("(//a[contains(text(),'delete')])[5]")).click();
 	}
