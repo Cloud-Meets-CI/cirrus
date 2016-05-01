@@ -263,14 +263,6 @@
 				<version>3.0.1</version>
 			</plugin>
 			<plugin>
-				<artifactId>findbugs-maven-plugin</artifactId>
-				<version>2.4.0</version>
-				<configuration>
-					<effort>Max</effort>
-					<xmlOutput>true</xmlOutput>
-				</configuration>
-			</plugin>
-			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>cobertura-maven-plugin</artifactId>
 				<version>2.6</version>
