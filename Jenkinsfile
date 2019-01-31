@@ -9,7 +9,7 @@ pipeline {
     }
     stage('publish') {
       steps {
-        sh 'ls **/*.war'
+        sh 'ls'
       }
     }
   }
