@@ -15,8 +15,10 @@ pipeline {
     }
     stage('docker') {
       steps {
+        script {
         docker.withTool("default") {
           sh 'docker -version'
+        }
         }
       }
     }
