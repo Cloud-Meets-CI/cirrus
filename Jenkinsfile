@@ -1,5 +1,10 @@
 pipeline {
-  agent any
+  agent {
+    docker {
+      image 'ubuntu:latest'
+    }
+
+  }
   stages {
     stage('build') {
       steps {
@@ -10,6 +15,11 @@ pipeline {
     stage('publish') {
       steps {
         sh 'ls'
+      }
+    }
+    stage('docker') {
+      steps {
+        sh 'docker -version'
       }
     }
   }
