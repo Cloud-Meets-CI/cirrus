@@ -4,8 +4,9 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh '''chmod +x gradlew
-./gradlew assemble'''
+        //sh '''chmod +x gradlew
+//./gradlew assemble'''
+        echo 'build'
       }
     }
     stage('publish') {
@@ -17,7 +18,7 @@ pipeline {
       steps {
         script {
         docker.withTool("default") {
-          sh 'docker -version'
+          sh 'docker --version'
         }
         }
       }
